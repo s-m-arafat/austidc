@@ -14,6 +14,14 @@ export default function Sidenav({navs}){
               {nav.item}
             </Link>
           ))}
+          <div className="flex flex-col space-y-3">
+          <Link to="/signin">
+            <button className="btn btn-outline ">Sign In</button>
+          </Link>
+          <Link to="/signup">
+            <button className="btn bg-green-500 text-white">Sign Up</button>
+          </Link>
+        </div>
         </ul>
       </div>
     );
